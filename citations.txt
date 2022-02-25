@@ -1,0 +1,6 @@
+https://www.tutorialrepublic.com/php-tutorial/php-mysql-login-system.php
+https://developer.mozilla.org/en-US/docs/Web/API/HTMLAudioElement
+https://stackoverflow.com/questions/4498482/javascript-cant-find-element-by-id
+
+https://www.php.net/manual/en/function.glob.php
+https://stackoverflow.com/questions/38899453/how-to-define-multiple-patterns-in-php-glob/38899559
