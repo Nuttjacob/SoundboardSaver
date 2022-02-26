@@ -1,27 +1,43 @@
+/*
+https://www.delftstack.com/howto/css/background-opacity-css/
+https://www.cssportal.com/css3-rgba-generator/
+https://www.geeksforgeeks.org/how-to-align-placeholder-text-in-html/
+
+*/
 body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	height: 100%;
-	font-family: 'Arial', sans-serif;
+	font-family: 'Helvetica', sans-serif;
 	font-size: 1.25em;
+	background-image: url('images/loginbg.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	opacity: 0.95;
 }
-h1, h2, h3 {
+h1, h2, h3, h4 {
 	text-align: center;
 }
 form { 
-	border: 1px dotted gray;
-	padding: 2%;
+	border: 1px solid gray;
+	padding: 1%;
+	background-color: rgba(255, 255, 255, 0.85); /* this seems to be the easiest way to do background opacity */
+	border-radius: 10px;
 }
-form input, form label { 
+form input { 
 	display: block;
 	margin: auto;
-	width: 75%;
-}
-form label {
+	width: 50%;
+	padding: 5px;/* This was unintentional but it looks kinda nice */
+	margin-top: 10px;
+	margin-bottom: 10px;
 	text-align: center;
-	padding-top: 10px;
-	padding-bottom: 10px;
+}
+form input::placeholder {/*Works for everything except IE */
+	text-align: center;
+}
+form input:-ms-input-placeholder {/* IE... */
+	text-align: center;
 }
 #loginsubmit {
 	margin-top: 10px;

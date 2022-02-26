@@ -4,3 +4,7 @@ https://stackoverflow.com/questions/4498482/javascript-cant-find-element-by-id
 
 https://www.php.net/manual/en/function.glob.php
 https://stackoverflow.com/questions/38899453/how-to-define-multiple-patterns-in-php-glob/38899559
+
+
+
+Background image for login page: https://www.pexels.com/photo/sound-mixer-board-in-recording-studio-5723534/ No attribution required

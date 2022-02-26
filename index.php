@@ -10,14 +10,12 @@
 		<form action="logincheck.php" method="post"><!-- don't want to use get for credentials... -->
 		<h1>Soundboard Saver</h1>
 		<h3>Create your own custom soundboards!</h3>
-		<label for="username">Username</label>
-		<input type="text" name="username" id="username">
-		<label for="password">Password</label>
-		<input type="password" name="password" id="password">
+		<input type="text" name="username" id="username" placeholder="Username" maxlength="25">
+		<input type="password" name="password" id="password" placeholder="Password" maxlength="255">
 		<input id="loginsubmit" type="submit" value="Login">
 		<?php 
 		if (isset($_GET['error'])) {
-			echo "<h2>Invalid credentials!</h2>";
+			echo "<h4>Invalid credentials!</h4>";
 		}
 		?>	
 		</form>
