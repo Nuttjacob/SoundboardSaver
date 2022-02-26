@@ -5,10 +5,8 @@
 	$sounds = glob("sounds/*/*.{mp3,wav}", GLOB_BRACE);
 	$soundnum = count($sounds);
 	$categories = scandir("sounds");//This would normally return the files in the directory too, but there are only folders right now
-	$dbloc = //
-	$dbuser = //
-	$dbpassword = //
-	$dbname = //
+	include 'dbcreds.php';
+	$dbname = "projectsounds";
 	$dbconnection = mysqli_connect($dbloc, $dbuser, $dbpassword, $dbname);
 	
 	for($soundite=1;$soundite<=$soundnum;$soundite++) {

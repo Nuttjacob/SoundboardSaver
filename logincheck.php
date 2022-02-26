@@ -1,9 +1,7 @@
 <?php
 	session_start();
-	$dbloc = //
-	$dbuser = //
-	$dbpassword = //
-	$dbname = //
+	include 'dbcreds.php';
+	$dbname = "project";
 	$dbconnection = mysqli_connect($dbloc, $dbuser, $dbpassword, $dbname);
 
 	if(isset($_POST['username']) && isset($_POST['password'])) {
