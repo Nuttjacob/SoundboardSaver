@@ -11,6 +11,9 @@
 	<form action="logout.php">
 		<input type="submit" value="Logout" >
 	</form>
+	<h2>Your Saved Soundboards</h2>
+	<a href="">Create a new soundboard</a>
+	
 	<body>
 </html>
 <?php 
