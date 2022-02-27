@@ -1,0 +1,9 @@
+body {
+	font-family: 'Helvetica', sans-serif;
+	font-size: 1.25em;
+}
+main {
+	width: 50%;
+	margin: 40px auto auto auto;
+	border: 1px dotted gray;
+}

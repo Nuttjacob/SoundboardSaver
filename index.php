@@ -2,6 +2,7 @@
 <!--https://www.simplilearn.com/tutorials/php-tutorial/php-login-form#step_3_create_a_database_table_using_mysql -->
 <html>
 	<head>
+	<?php include "favicons.html"; ?>
 	<title>Login</title>
 	<link type="text/css" href="login.css" rel="stylesheet" >
 	</head>

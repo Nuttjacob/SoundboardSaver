@@ -1,0 +1,29 @@
+/*
+Jacob Grover, 2/27/22
+https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+*/
+nav {
+	display: flex;
+	align-items: stretch;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background-color: #f9a076;
+	padding: 1%;
+	justify-content: center;
+}
+nav a {
+	color: black;
+	padding-left: 2%;
+	padding-right: 2%;
+	text-decoration: none;
+}
+
+#usernav{/*Make the profile setting/logout links smaller */
+	display: block;
+}
+#userops{
+	font-size: 0.75em;
+}
+
