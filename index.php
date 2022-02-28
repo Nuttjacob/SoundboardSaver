@@ -1,5 +1,9 @@
 <!-- https://www.w3schools.com/css/css_align.asp -->
 <!--https://www.simplilearn.com/tutorials/php-tutorial/php-login-form#step_3_create_a_database_table_using_mysql -->
+<?php 
+	session_start();
+	if(!isset($_SESSION['sessid']) && !isset($_SESSION['username'])) {
+?>
 <html>
 	<head>
 	<?php include "favicons.html"; ?>
@@ -22,3 +26,10 @@
 		</form>
 	</body>
 </html>
+<?php
+	}
+	else {
+		header("Location: userhome.php");
+		exit();
+	}
+?>
