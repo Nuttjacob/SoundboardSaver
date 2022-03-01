@@ -16,7 +16,7 @@
 		</nav>
 		<main>
 			<h2>Your Saved Soundboards</h2>
-			<a href="newsb.php">Create a new soundboard</a>
+			<a href="">Create a new soundboard</a>
 		</main>
 		<body>
 	</html>

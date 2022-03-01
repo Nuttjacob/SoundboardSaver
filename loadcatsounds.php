@@ -10,7 +10,7 @@
 	$soundnum = mysqli_num_rows($queryresult);
 	for($soundite=0;$soundite<=$soundnum;$soundite++) {//This should be "lined up" with the query so there wont be an index errors
 		$soundrow = mysqli_fetch_assoc($queryresult);
-		echo "<option value='{$soundrow['soundname']}'>{$soundrow['soundname']}</option>";
+		echo "<option value='{$soundrow['soundid']}'>{$soundrow['soundname']}</option>";
 	}
 	
 

@@ -7,3 +7,6 @@ main {
 	margin: 60px auto auto auto;
 	border: 1px dotted gray;
 }
+#newsoundfield {
+	width: fit-content;
+}
