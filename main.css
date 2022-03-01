@@ -7,6 +7,17 @@ main {
 	margin: 60px auto auto auto;
 	border: 1px dotted gray;
 }
-#newsoundfield {
+#selsoundfield, #upsoundfield {
 	width: fit-content;
+	padding: 2%;
+	text-align: center;
+	display: inline;
+}	
+#selsoundfield select, #selsoundfield label {
+	display: block;
+	margin: auto;
+}
+#selcontrols {
+	padding: 2%;
+	margin: auto;
 }
