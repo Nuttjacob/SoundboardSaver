@@ -1,6 +1,7 @@
 <!--Jacob Grover, 2/27/22
 https://www.w3schools.com/sql/sql_distinct.asp
 https://developers.google.com/web/fundamentals/media/recording-audio
+https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/capture
 -->
 <?php
 	session_start();
@@ -51,9 +52,20 @@ https://developers.google.com/web/fundamentals/media/recording-audio
 				</div>
 			</fieldset>
 			<fieldset id="upsoundfield">
-			<legend>Upload a new sound</legend>
-			<input type="file" id="filesel" name="file" accept="audio/mp3, audio/wav" capture><!-- get capture working -->
-			<input type="submit">
+				<legend>Upload a new sound</legend>
+				<input type="file" id="filesel" name="file" accept="audio/*" capture><!-- get capture working -->
+				
+				<label for="upsoundname">Name</label>
+				<input type="text" id="upsoundname" name="upsoundname">
+				<label for="upcategory">Category</label>
+				<input type="text" id="upcategory" name="upcategory">
+				<div id="upconfirm">
+					<div id="uppublicdiv">
+						<label for="uppublic">Public?</label>
+						<input type="checkbox" id="uppublic" name="uppublic">
+					</div>
+					<input type="submit" value="Upload">
+				</div>
 			</fieldset>
 		</main>
 	</body>

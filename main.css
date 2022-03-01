@@ -1,3 +1,4 @@
+/*https://stackoverflow.com/questions/1554941/vertical-align-text-in-a-label*/
 body {
 	font-family: 'Helvetica', sans-serif;
 	font-size: 1.25em;
@@ -13,11 +14,23 @@ main {
 	text-align: center;
 	display: inline;
 }	
-#selsoundfield select, #selsoundfield label {
+#selsoundfield select, #selsoundfield label, #upsoundfield input, #upsoundfield label {
 	display: block;
 	margin: auto;
 }
 #selcontrols {
 	padding: 2%;
 	margin: auto;
+}
+#upconfirm {
+	display: flex;
+	width: fit-content;
+	justify-content: center;
+	align-items: center;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 1%;
+}
+#uppublicdiv {
+	padding: 10%;
 }
