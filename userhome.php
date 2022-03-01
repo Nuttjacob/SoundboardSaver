@@ -12,11 +12,11 @@
 		</head>
 		<body>
 		<nav>
-			<?php include "navbar.php" ?>
+			<?php include "navbar.php"; ?>
 		</nav>
 		<main>
 			<h2>Your Saved Soundboards</h2>
-			<a href="">Create a new soundboard</a>
+			<a href="newsb.php">Create a new soundboard</a>
 		</main>
 		<body>
 	</html>

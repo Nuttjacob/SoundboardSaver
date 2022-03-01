@@ -15,28 +15,32 @@ https://www.w3schools.com/sql/sql_distinct.asp
 		<title>New Soundboard</title>
 	</head>
 	<body>
+		<nav>
 		<?php include "navbar.php" ?>
-		<h1>New Soundboard</h1>
-		<?php 
-			include 'dbcreds.php';
-			$dbname = 'projectsounds';
-			$dbconnection = mysqli_connect($dbloc, $dbuser, $dbpassword, $dbname);
-			$totalcats = mysqli_query($dbconnection, "SELECT DISTINCT category FROM sounds;");//Gets all of the categories, should change this variable name
-			$catnum = mysqli_num_rows($totalcats);
-		?>
-		<label for="categories">Categories</label><!--The categories themselves are loaded by PHP, then JS gets the sounds for the given category with more PHP-->
-		<select id="categories">
-			<?php
-			for($catite=0;$catite<=$catnum;$catite++) {
-				$catrow = mysqli_fetch_assoc($totalcats);//PHP has a "cursor" that goes along the query rows
-				$opvalue = $catrow['category'];
-				echo "<option value='{$opvalue}'>{$opvalue}</option>";
-			}
+		</nav>
+		<main>
+			<h1>New Soundboard</h1>
+			<?php 
+				include 'dbcreds.php';
+				$dbname = 'projectsounds';
+				$dbconnection = mysqli_connect($dbloc, $dbuser, $dbpassword, $dbname);
+				$totalcats = mysqli_query($dbconnection, "SELECT DISTINCT category FROM sounds;");//Gets all of the categories, should change this variable name
+				$catnum = mysqli_num_rows($totalcats);
 			?>
-		</select>
-		<label for="sounds">Sounds</label>
-		<select id="sounds">
-		</select>
+			<label for="categories">Categories</label><!--The categories themselves are loaded by PHP, then JS gets the sounds for the given category with more PHP-->
+			<select id="categories">
+				<?php
+				for($catite=0;$catite<=$catnum;$catite++) {
+					$catrow = mysqli_fetch_assoc($totalcats);//PHP has a "cursor" that goes along the query rows
+					$opvalue = $catrow['category'];
+					echo "<option value='{$opvalue}'>{$opvalue}</option>";
+				}
+				?>
+			</select>
+			<label for="sounds">Sounds</label>
+			<select id="sounds">
+			</select>
+		</main>
 	</body>
 </html>
 <?php 

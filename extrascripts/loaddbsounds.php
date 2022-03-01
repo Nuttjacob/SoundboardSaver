@@ -7,8 +7,8 @@
 	$dbconnection = mysqli_connect($dbloc, $dbuser, $dbpassword, $dbname);
 	$sounds = glob("sounds/*/*.{mp3,wav}", GLOB_BRACE);
 	$soundnum = count($sounds);
+	
 	for($soundite=1;$soundite<$soundnum;$soundite++) {
-		echo $soundite;
 		if(strpos($sounds[$soundite], ".mp3") != false){
 			$name = basename($sounds[$soundite], ".mp3");
 			
@@ -18,7 +18,7 @@
 		}
 		$category = str_replace("sounds/", "", dirname($sounds[$soundite], 1));
 		echo "<br>";
-		$query = "INSERT INTO sounds (soundid, soundpath, category, public) VALUES ('{$soundite}', '{$name}', '{$category}', TRUE);";
+		$query = "INSERT INTO sounds (soundid, soundpath, soundname, category, public) VALUES ('{$soundite}', '{$sounds[$soundite]}', '{$name}', '{$category}', TRUE);";
 		echo mysqli_query($dbconnection, $query);
 	}
 ?>
